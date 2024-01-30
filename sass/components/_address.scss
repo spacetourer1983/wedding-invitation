@@ -1,0 +1,8 @@
+.address {
+  & .address-map {
+    width: 75vw;
+    height: 75vh;
+    border-radius: 1rem;
+    border: 1px solid #000;
+  }
+}

@@ -18,10 +18,90 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: url(../assets/ltbg.png), url(../assets/rbbg.png), url(../assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 60%, 60%, cover;
+  background-position: top left, bottom right, center center;
+  background-attachment: fixed;
+}
+
+header,
+footer {
+  width: 100%;
+  height: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 img {
   display: block;
+}
+
+.invitation .invitation-header {
+  font-weight: 400;
+}
+.invitation .invitation-header .and {
+  font-size: smaller;
+}
+.invitation .invitation-text .invitation-text__paragraph {
+  text-indent: 2rem;
+  text-align: justify;
+  font-weight: 400;
+  width: 100%;
+}
+.invitation .invitation-text .invitation-text__paragraph:first-child {
+  text-align: center;
+}
+.invitation .invitation-text .invitation-text__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.timer {
+  font-weight: 400;
+  font-style: normal;
+}
+.timer.timer-header {
+  font-weight: 400;
+}
+.timer .timer-items {
+  display: flex;
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+.timer .timer-items .timer-items__item {
+  position: relative;
+  min-width: 60px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.timer .timer-items .timer-items__item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+.timer .timer-items .timer-items__item:not(:last-child)::after {
+  content: ":";
+  position: absolute;
+  right: -2px;
+}
+
+.schedule .schedule-list {
+  text-align: left;
+}
+
+.address .address-map {
+  width: 75vw;
+  height: 75vh;
+  border-radius: 1rem;
+  border: 1px solid #000;
 }/*# sourceMappingURL=main.css.map */

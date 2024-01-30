@@ -1,0 +1,22 @@
+.invitation {
+  & .invitation-header {
+    font-weight: 400;
+    & .and {
+      font-size: smaller;
+    }
+  }
+  & .invitation-text {
+    & .invitation-text__paragraph {
+      text-indent: 2rem;
+      text-align: justify;
+      font-weight: 400;
+      width: 100%;
+      &:first-child {
+        text-align: center;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
