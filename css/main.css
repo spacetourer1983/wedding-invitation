@@ -1,3 +1,23 @@
+@font-face {
+  font-family: Astra;
+  src: url(../fonts/SL_ASTRA_tt.ttf) format(truetype);
+}
+@font-face {
+  font-family: Parsec;
+  src: url(../fonts/SL_PARSE_tt.ttf) format(truetype);
+}
+@font-face {
+  font-family: Torhok;
+  src: url(../fonts/SL_TORHOK_tt.ttf) format(truetype);
+}
+@font-face {
+  font-family: Souvenir;
+  src: url(../fonts/SL_SOUVE_tt.ttf) format(truetype);
+}
+@font-face {
+  font-family: Decor;
+  src: url(../fonts/SL_DEC_tt.ttf) format(truetype);
+}
 h1,
 h2,
 h3,
@@ -6,19 +26,25 @@ h5,
 h6,
 p,
 ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
   list-style-type: none;
 }
 
 html {
   scroll-behavior: smooth;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
+  font-family: Decor;
+  font-size: 16px;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -35,49 +61,84 @@ footer {
   height: 0;
 }
 
+section {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 a {
   text-decoration: none;
+  color: gray;
 }
 
 img {
   display: block;
 }
 
+.invitation {
+  height: 100vh;
+}
 .invitation .invitation-header {
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 25vw;
+  line-height: 80px;
+  text-align: center;
+  margin-bottom: 48px;
 }
 .invitation .invitation-header .and {
   font-size: smaller;
+}
+.invitation .invitation-text {
+  max-width: calc(100% - 2em);
 }
 .invitation .invitation-text .invitation-text__paragraph {
   text-indent: 2rem;
   text-align: justify;
   font-weight: 400;
-  width: 100%;
+  font-size: 6vw;
 }
 .invitation .invitation-text .invitation-text__paragraph:first-child {
   text-align: center;
+  margin-bottom: 48px;
+  font-size: 7vw;
 }
 .invitation .invitation-text .invitation-text__paragraph:last-child {
   margin-bottom: 0;
 }
 
 .timer {
-  font-weight: 400;
-  font-style: normal;
+  height: 50vh;
 }
-.timer.timer-header {
-  font-weight: 400;
+.timer .timer-header {
+  font-weight: 700;
+  font-size: 10vw;
+}
+.timer .timer-footer {
+  font-size: 8vw;
 }
 .timer .timer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  font-size: 48px;
-  margin-bottom: 1rem;
+  font-size: 18vw;
+  padding: 0.3em 0 0.5em;
 }
 .timer .timer-items .timer-items__item {
   position: relative;
   min-width: 60px;
-  padding-bottom: 15px;
+  padding: 0 10px 15px;
   text-align: center;
 }
 .timer .timer-items .timer-items__item::before {
@@ -85,23 +146,40 @@ img {
   display: block;
   position: absolute;
   left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  font-size: 14px;
+  bottom: -20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 22px;
 }
 .timer .timer-items .timer-items__item:not(:last-child)::after {
   content: ":";
   position: absolute;
-  right: -2px;
+  right: -5px;
 }
 
+.schedule {
+  height: 50vh;
+}
+.schedule .schedule-header {
+  font-size: 10vw;
+  margin-bottom: 1em;
+}
 .schedule .schedule-list {
-  text-align: left;
+  text-align: center;
+  font-size: 7vw;
+  line-height: 1.2em;
 }
 
+.address {
+  height: 100vh;
+}
 .address .address-map {
   width: 75vw;
   height: 75vh;
   border-radius: 1rem;
   border: 1px solid #000;
-}/*# sourceMappingURL=main.css.map */
+  margin-bottom: 4em;
+}
+.address .address-link {
+  font-size: 7vw;
+}
