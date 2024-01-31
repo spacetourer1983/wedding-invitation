@@ -159,12 +159,23 @@ img {
   height: 100vh;
 }
 .address .address-map {
-  width: 75vw;
-  height: 75vh;
+  width: 90%;
+  height: 75%;
   border-radius: 1rem;
-  border: 1px solid #000;
+  border: 2px solid #000;
   margin-bottom: 4em;
 }
 .address .address-link {
   font-size: 7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.address .address-link img {
+  width: 32px;
+  height: auto;
 }

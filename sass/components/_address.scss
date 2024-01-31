@@ -1,13 +1,19 @@
 .address {
   height: 100vh;
   & .address-map {
-    width: 75vw;
-    height: 75vh;
+    width: 90%;
+    height: 75%;
     border-radius: 1rem;
-    border: 1px solid #000;
+    border: 2px solid #000;
     margin-bottom: 4em;
   }
   & .address-link {
     font-size: 7vw;
+    display: flex;
+    flex-direction: row;
+    & img {
+      width: 32px;
+      height: auto;
+    }
   }
 }
