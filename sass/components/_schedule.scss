@@ -1,8 +1,9 @@
 .schedule {
   height: 50vh;
   & .schedule-header {
+    text-align: center;
     font-size: 10vw;
-    margin-bottom: 1em;
+    text-transform: uppercase;
   }
   & .schedule-list {
     text-align: center;

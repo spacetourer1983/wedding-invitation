@@ -1,20 +1,4 @@
 @font-face {
-  font-family: Astra;
-  src: url(../fonts/SL_ASTRA_tt.ttf) format(truetype);
-}
-@font-face {
-  font-family: Parsec;
-  src: url(../fonts/SL_PARSE_tt.ttf) format(truetype);
-}
-@font-face {
-  font-family: Torhok;
-  src: url(../fonts/SL_TORHOK_tt.ttf) format(truetype);
-}
-@font-face {
-  font-family: Souvenir;
-  src: url(../fonts/SL_SOUVE_tt.ttf) format(truetype);
-}
-@font-face {
   font-family: Decor;
   src: url(../fonts/SL_DEC_tt.ttf) format(truetype);
 }
@@ -161,8 +145,9 @@ img {
   height: 50vh;
 }
 .schedule .schedule-header {
+  text-align: center;
   font-size: 10vw;
-  margin-bottom: 1em;
+  text-transform: uppercase;
 }
 .schedule .schedule-list {
   text-align: center;
